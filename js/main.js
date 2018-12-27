@@ -142,12 +142,12 @@ function populateCategories(){
 function processSearch(){
 	var searchBar = document.querySelector('#searchText');
 	var text = document.querySelector('#searchText').value;
-	console.log(text);
+
+	text = text.toLowerCase();
 
 	var div = document.querySelector('.seperator');
 
 	if(text == '') {
-		console.log('aa');
 		div.classList.add('hidden');
 		viewButtons[3].classList.add('hidden');
 		changeView(currView);
@@ -272,6 +272,6 @@ window.onload = function(e) {
 	document.querySelector('#searchText').addEventListener('input', e => processSearch());
 
 	setTimeout(function(){ document.querySelector('#searchText').focus();}, 200);
-	
+
 	changeView(0);
 }
