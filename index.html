@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Whiskermenu demo</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700,700i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+	<div id="bottompanel">
+		<div id="leftpanel">
+			<span id="whisker-icon" class="svg-icon-shadow panelitem selected">
+				<svg width="14px" height="14px" viewBox="0 0 14 14">
+					<rect width="6" height="6" fill="#FFFFFF" x="0" y="0"/>
+					<rect width="6" height="6" fill="#FFFFFF" x="8" y="0"/>
+					<rect width="6" height="6" fill="#FFFFFF" x="0" y="8"/>
+					<rect width="6" height="6" fill="#FFFFFF" x="8" y="8"/>
+				</svg>
+			</span>
+		</div>
+	</div>
+	<div id="whisker-menu" class="modal">
+		<span id="whisker-searchbar">
+			<i class="material-icons md-18">search</i>
+			<input type="text" name="search" id="searchText" />
+		</span>
+		<div id="whisker-sidebar">
+			<span id="whisker-sidebar-profpic">
+				<img src="img/propic.png"/>
+			</span>
+			<span id="whisker-sidebar-chooser">
+				<span id="w-btn-fav" class="selected">
+					<i class="material-icons md-18">star</i>
+				</span>
+				<span id="w-btn-lst">
+					<i class="material-icons md-18">list</i>
+				</span>
+				<span id="w-btn-cat">
+					<i class="material-icons md-18">category</i>
+				</span>
+				<b class="seperator hidden"></b>
+				<span id="w-btn-src" class="hidden">
+					<i class="material-icons md-18">search</i>
+				</span>
+			</span>
+		</div>
+		<div id = "whisker-visible-area">
+			<div id="whisker-favourites" class="hidden">
+			</div>
+			<div id="whisker-all-apps" class="hidden">
+			</div>
+			<div id="whisker-category" class="">
+				<div id="wc-sidebar">
+				</div>
+			</div>
+			<div id="whisker-search">
+				<span class="label hidden" id="ws-A">Apps</span>
+				<div id="ws-c-A" class="hidden">
+				</div>
+				<span class="label hidden" id="ws-F">Files</span>
+				<div id="ws-c-F" class="hidden">
+				</div>
+				<span class="label hidden" id="ws-S">Songs</span>
+				<div id="ws-c-S" class="hidden">
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/apps.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
