@@ -2,6 +2,9 @@
 ## What is this about?
 This was inspired by 2010's-era online desktops. As far as I remember, I was using debian with XFCE at that time (Pentium IV anyone?), and did not like how the whisker-menu looked. This was an attempt to "design" a better whisker-menu. The design's aged well.
 
+## Demo
+Demo's at [GitHub Pages](https://therdas.github.io/whisker) and at [therdas.dev](https://www.therdas.dev/playground/old/whisker).
+
 ## Scope
 - [x] A taskbar
 - [] Some very simple apps to check how it'd behave
